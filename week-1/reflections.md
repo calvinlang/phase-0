@@ -6,23 +6,23 @@
 
 1. A shell is an interface to access and communicate with the Operating System. Bash is a type of shell and it is widely used and compatible with many systems.
 2. There are a lot of advantages to me about working in GUI that is user friendly, and one of them is using cmd-z/undo when I put something in the wrong folder. It’s live ammo on that terminal.
-*-- Another part is the syntax. Like if I’m using grep -R with a |, I might not know where to put what syntax if there’s also an > append.
-*-- I also get confused whenever the is a syntax of a of when to use dashes like I went ahead to the github assignment and there were commands like “—“ or “-p” and “/.” that I couldn’t figure out.
-*-- I’m also somewhat confused about capitalization. Sometimes I see -r and sometimes -R and I’m not certain what the differences are for each usage.
+..* Another part is the syntax. Like if I’m using grep -R with a |, I might not know where to put what syntax if there’s also an > append.
+..* I also get confused whenever the is a syntax of a of when to use dashes like I went ahead to the github assignment and there were commands like “—“ or “-p” and “/.” that I couldn’t figure out.
+..* I’m also somewhat confused about capitalization. Sometimes I see -r and sometimes -R and I’m not certain what the differences are for each usage.
 3. Yes I managed to use all the commands but I have some flash cards made to try to memorize these.
 4. The “ruby” function seems to be most useful to me because I can quickly run my programming and see if it works from the terminal. I am still having trouble formulating why it would be more efficient than my GUI but I think that will come with time. 
 5. What each does:
 pwd - Print working directory shows me where I am in my folder structure
-*-- ls - tells me what files are in my current directory
-*-- mv - move files or folders from one directory to another
-*-- cd - changes my directory that I am working on
-*-- ../ - it is used when describing a location that it is one directory below
-*-- touch - creates a new file
-*-- mkdir - creates a new folder / directory
-*-- less - it opens a file (like a text) into a viewer where I can scroll or go to next page. Better for viewing larger files
-*-- rmdir - remove a directory
-*-- rm - remove a file
-*-- help - provides help like a list of available commands that I can make.
+..* ls - tells me what files are in my current directory
+..* mv - move files or folders from one directory to another
+..* cd - changes my directory that I am working on
+..* ../ - it is used when describing a location that it is one directory below
+..* touch - creates a new file
+..* mkdir - creates a new folder / directory
+..* less - it opens a file (like a text) into a viewer where I can scroll or go to next page. Better for viewing larger files
+..* rmdir - remove a directory
+..* rm - remove a file
+..* help - provides help like a list of available commands that I can make.
 
 
 # 1.3 Forking and Cloning
