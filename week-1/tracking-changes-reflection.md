@@ -8,8 +8,8 @@
 	* Head is the version of the repository from the last commit.
 * What are the 3 stages of a git change and how do you move a file from one stage to the other?
 	* Modified - file was changed but not set to be committed. It needs to be added with $git add {filename}
-	Staged - File is ready to be committed. To commit us $git commit
-	Commited - File is in the local database. 
+	* Staged - File is ready to be committed. To commit us $git commit
+	* Commited - File is in the local database. 
 * Write a handy cheatsheet of the commands you need to commit your changes?
 	* New branch - $git branch branchname
 	* Go to branch - $git branch branchname
