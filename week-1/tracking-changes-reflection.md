@@ -12,7 +12,7 @@ What are the 3 stages of a git change and how do you move a file from one stage 
 	Commited - File is in the local database. 
 Write a handy cheatsheet of the commands you need to commit your changes?
 	New branch - $git branch branchname
-	Go to branch - $git branch branchname
+	Go to branch - $git checkout branchname
 	Add file to stage - $git add filename
 	Commit file - $git commit -m 'message'
 	Sync to online - $git push origin filename
