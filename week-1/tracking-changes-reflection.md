@@ -15,7 +15,7 @@
 	* Go to branch - $git checkout branchname
 	* Add file to stage - $git add filename
 	* Commit file - $git commit -m 'message'
-	* Sync to online - $git push origin filename
+	* Sync to online - $git push origin branchname
 * What is a pull request and how do you create and merge one?
 	* Pull is used to fetch data from a remote server. Usually this would be from a previously pushed repository $git pull origin branchname
 * Why are pull requests preferred when working with teams?
