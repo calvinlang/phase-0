@@ -3,9 +3,9 @@ Wireframe:
 
 Reflection
 - What is a wireframe?
-    - A wireframe is a basic blueprint of the overall design of the website. It is a great first step for brainstorming how you want it to look and how the user experience will be.
+    - A wireframe is a basic blueprint of the overall design of the website. It is a great first step for brainstorming how you want it to look and how the user experience will be. So what we do is we take the basic layout how we want out web site and draw it out with simple lines.
 - What are the benefits of wireframing?
-    - It provides a good blueprint for your overall design when you start using a more picturesque method of drawing out the imagery of the site. It removes the distraction of fonts and colors so that full focus can be on the layout. It’s very useful for seeing how the user will experience the site.
+    - It provides a good blueprint for your overall design when you start using a more picturesque method of drawing out the imagery of the site. It removes the distraction of fonts and colors so that full focus can be on the layout. It’s very useful for seeing how the user will experience the site. Wireframing is also fast and you can come up with many ideas to choose from quickly.
     - The tutsplus site describes it like the architecture of a building. We don’t want to worry about the wall colors what sofas we want. We want a basic structure at which to start building and fleshing out what is possible.
 - Did you enjoy wireframing your site?
     - I actually did not because I am the type of personality that always tries to reinvent the wheel. So for a normal about me site I’d rather stay basic and simple.
