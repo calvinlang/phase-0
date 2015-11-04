@@ -1,0 +1,91 @@
+/*
+- What is important to know when linking an external file (like a stylesheet) to an HTML file?
+    - It should be based on the relative path because the HTML is going to have to refer to it wherever it gets placed.
+- What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+    - This was quite difficult and there were many problems of inheritance that would come up. At times nothing would align to the center despite whatever CSS commands we put in. 
+    - I learned the best trick would probably be to keep my CSS tree organized. I had a:links up near the header and it was so disorganized that I couldn't figure out what connected with what.
+    - I also learned that while I could use <p> to create a space it was safer to give p a margin of 30px in CSS
+- What CSS did you use to modify the element style (like size, color, etc.)
+    - We used all kinds of element styles including size and color. For sizes we used % instead of pixels. We had alignments, indentations, margins and colors.
+- Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+    - We only used classes because there was no specific area that we wanted to give an ID. We ended up using classes because they were elements we invoked over and over in the HTML. If I was to use ID it would be to designate an entire area and some of the items within it.
+- When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+    - Theirs definitely had cleaner code because the used very standard HTML commands such as H3 and <p align="center"> Even though it is cleaner it probably doesn't follow best practices if the site was set for expansion. Right now it's just one small page, but if it were to expand, any changes that are reflected in all pages would be impossible to manage.
+*/
+
+body {
+    background-color: #ffffff;
+    color: #000080;
+    font-size: x-small;
+}
+
+header {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+footer {
+	text-align: left;
+}
+
+
+p { 
+	margin: 30px 
+}
+
+a {
+    color: #800080;
+}
+
+a:visted {
+    color: #ff0000;
+}
+
+.indent {
+	text-indent: 1.0em;
+}
+
+.geico {
+    text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.medium {
+    font-size: 120%;
+}
+
+.large {
+    font-size: 140%;
+}
+
+.xlarge {
+    font-size: 165%;
+}
+
+.line-break {
+	height:1px;
+	background:#717171;
+	border-bottom:1px solid #313030;
+}
+
+table a {
+    color: #800080;
+    font-size: medium;
+}
+
+table {
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-spacing: 10px;
+}
+    
+table a:visted {
+    color: #ff0000;
+    font-size: medium;
+}
