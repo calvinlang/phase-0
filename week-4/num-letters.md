@@ -1,0 +1,6 @@
+- What does puts do?
+	- Puts puts text to screen for the presentation of a value on a new line. It's important to make a distinction between this and "return" because return doesn't put text to screen unless asked to.
+- What is an integer? What is a float?
+	- An integer is a number without a decimal point and takes values as whole numbers. Arithmetic with integers also presents integers, so 9/4 = 2. Float are numbers with decimals, this includes 9.0. Most work is done with integers unless calculations are involved.
+- What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
+	- Floats are integers, so no decimals are represented. This is because in our functions on computers as well as life, we use a lot of numbers, but not necessarily a lot of calculations. We don't have 4.5 bedroom homes (we'll maybe, kind of) and we don't have 5.7 lightbulbs. When we do have calulations we use floats. This is to show we have 3.5 cups of flour or your sales tax for a sandwich is $0.87. 
