@@ -1,16 +1,3 @@
-
-
-# ![Image 1](/week-3/chrome_devtools/as_1.png)  
-# ![Image 2](/week-3/chrome_devtools/as_2.png)  
-# ![Image 3](/week-3/chrome_devtools/as_3.png)  
-# ![Image 4](/week-3/chrome_devtools/as_4.png)  
-# ![Image 5](/week-3/chrome_devtools/as_5.png)  
-# ![Image 6](/week-3/chrome_devtools/as_6.png)  
-# ![Image 7](/week-3/chrome_devtools/as_7.png)  
-# ![Image 8](/week-3/chrome_devtools/as_8.png)  
-# ![Image 9](/week-3/chrome_devtools/as_9.png)
-
-
 - How can you use Chrome's DevTools inspector to help you format or position elements?
 	- It's a terrific tool that can help figure out formatting changes live without have to always save the file and refresh the browser. 
 - How can you resize elements on the DOM using CSS?
@@ -26,3 +13,15 @@
 	- Border sets a visual frame around an object that doesn't affect the distance between the object and other objects
 - What was your impression of this challenge overall? (love, hate, and why?)
 	- I liked the challenge. It was a different take on previous challenges and it really was a good impression of the basic ability of how one can modify outputs in CSS.
+
+# ![Image 1](/week-3/chrome_devtools/imgs/as_1.png)  
+# ![Image 2](/week-3/chrome_devtools/imgs/as_2.png)  
+# ![Image 3](/week-3/chrome_devtools/imgs/as_3.png)  
+# ![Image 4](/week-3/chrome_devtools/imgs/as_4.png)  
+# ![Image 5](/week-3/chrome_devtools/imgs/as_5.png)  
+# ![Image 6](/week-3/chrome_devtools/imgs/as_6.png)  
+# ![Image 7](/week-3/chrome_devtools/imgs/as_7.png)  
+# ![Image 8](/week-3/chrome_devtools/imgs/as_8.png)  
+# ![Image 9](/week-3/chrome_devtools/imgs/as_9.png)
+
+
