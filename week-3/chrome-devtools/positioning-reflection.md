@@ -14,14 +14,14 @@
 - What was your impression of this challenge overall? (love, hate, and why?)
 	- I liked the challenge. It was a different take on previous challenges and it really was a good impression of the basic ability of how one can modify outputs in CSS.
 
-# ![Image 1](week-3/chrome_devtools/imgs/as_1.png)  
+# ![Image 1](imgs/as_1.png)  
 # ![Image 2](imgs/as_2.png)  
-# ![Image 3](/week-3/chrome_devtools/imgs/as_3.png)  
-# ![Image 4](/imgs/as_4.png)  
-# ![Image 5](week-3/chrome_devtools/imgs/as_5.png)  
-# ![Image 6](week-3/chrome_devtools/imgs/as_6.png)  
-# ![Image 7](week-3/chrome_devtools/imgs/as_7.png)  
-# ![Image 8](week-3/chrome_devtools/imgs/as_8.png)  
-# ![Image 9](week-3/chrome_devtools/imgs/as_9.png)
+# ![Image 3](imgs/as_3.png)  
+# ![Image 4](imgs/as_4.png)  
+# ![Image 5](imgs/as_5.png)  
+# ![Image 6](imgs/as_6.png)  
+# ![Image 7](imgs/as_7.png)  
+# ![Image 8](imgs/as_8.png)  
+# ![Image 9](imgs/as_9.png)
 
 
