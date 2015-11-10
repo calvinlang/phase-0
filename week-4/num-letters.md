@@ -33,7 +33,7 @@ puts ((365*8)+(366*2))*24*60
 
 Challenge solutions:
 
-[4.2.1 Defining Variables](defining-variables.rb)
-[Simple String Methods](simple-string.rb)
-[Local Variables and Basic Arithmetical Operations](basic-math.rb)
+- [4.2.1 Defining Variables](defining-variables.rb)
+- [4.2.2 Simple String Methods](simple-string.rb)
+- [4.2.3 Local Variables and Basic Arithmetical Operations](basic-math.rb)
 
