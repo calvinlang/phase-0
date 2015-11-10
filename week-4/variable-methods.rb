@@ -16,6 +16,10 @@ favorite_number = gets.chomp
 favorite_number_bigger = favorite_number.to_i + 1
 puts "Wouldn't you rather #{favorite_number_bigger}? It's bigger!" 
 
+# Exercises:
+# Return a Formatted Address: https://github.com/calvinlang/phase-0/blob/master/week-4/address/my_solution.rb
+# Defining Math Methods: https://github.com/calvinlang/phase-0/blob/master/week-4/math/my_solution.rb
+
 #Reflection:
 #How do you define a local variable?
 #	There are many ways but in this case we used a method. We can create a local variable that
