@@ -22,7 +22,3 @@ end
 
 end
 
-puts valid_triangle?(3,4,5)
-puts valid_triangle?("hello",6,3)
-puts valid_triangle?(10,6,3)
-puts valid_triangle?(0,6,3)
