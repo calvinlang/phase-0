@@ -5,7 +5,7 @@
 
 # Your Solution Below
 
-def good_guess(integer)
+def good_guess?(integer)
 	if integer == 42
 		return true
 	else
@@ -13,6 +13,6 @@ def good_guess(integer)
 	end
 end
 
-puts good_guess(34)
-puts good_guess(42)
-puts good_guess(100)
+puts good_guess?(34)
+puts good_guess?(42)
+puts good_guess?(100)
