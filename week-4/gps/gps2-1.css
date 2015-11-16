@@ -1,0 +1,66 @@
+* {
+	font-family: Lucida Console;
+}
+
+header {
+	color: white;
+	background-color: #59A3EC;
+	text-indent: 2.5%;
+	padding-top: 10px;
+}
+
+header p {
+	background-color: #BDDBF8;
+	height: 65px;
+	width: 95%%;
+	color: gray;
+	margin: 0;
+	padding: 30px;
+	text-indent: 0%;
+}
+
+.column-1 {
+	float: left;
+	width: 40%;
+	padding: 2.5%;
+	margin-left: 2%;
+}
+
+.column-2 {
+	float: right;
+	width: 40%;	
+	padding: 2.5%;
+	margin-right: 2%;
+}
+
+footer {
+	background-color: #EAEFF9;
+	clear: both;
+	padding: 5%
+}
+
+article h2 {
+	font-weight: bold;
+
+}
+
+article p {
+
+}
+
+article ul li a {
+	font-weight: bold;
+	text-decoration: none; 
+	color: black;
+
+}
+
+article details {
+	background-color: #EDEDED;
+	padding: 1.4%;
+	text-indent: 5px;
+}
+
+article details p {
+	background-color: #F2F2F2;
+}
