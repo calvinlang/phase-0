@@ -24,11 +24,11 @@ def my_array_modification_method!(source, thing_to_modify)
   source_position = 0
   while source_position < source.length
     if source[source_position].is_a? Integer
-      source[source_position] += thing_to_modify
-      
+      source[source_position] += thing_to_modify    
     end
     source_position += 1
   end
+  return source
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
@@ -36,6 +36,15 @@ def my_hash_modification_method!(source, thing_to_modify)
     age += thing_to_modify
   end
 end
+
+# puts i_want_pets
+# puts my_family_pets_ages
+
+puts my_array_modification_method!(i_want_pets, 3)
+my_hash_modification_method!(source, thing_to_modify)
+
+puts i_want_pets
+puts my_family_pets_ages
 
 # Identify and describe the Ruby method(s) you implemented.
 #
