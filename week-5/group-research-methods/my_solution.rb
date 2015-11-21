@@ -20,29 +20,36 @@ end
 #
 
 # Person 2
+
+# def my_array_modification_method!(source, thing_to_modify)
+#   source_position = 0
+#   while source_position < source.length
+#     source[source_position] += thing_to_modify if source[source_position].is_a? Integer
+#     source_position += 1
+#   end
+#   source
+# end
+
+
 def my_array_modification_method!(source, thing_to_modify)
-  source_position = 0
-  while source_position < source.length
-    if source[source_position].is_a? Integer
-      source[source_position] += thing_to_modify     
-    end
-    source_position += 1
-  end
-  return source.to_a
+  source.map!{ |item|
+    item += thing_to_modify if item.is_a?(Integer)
+    item
+  }
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
   source.each do | dog , age |
     source[dog] = age + thing_to_modify
   end
-  source
 end
 
-
+puts my_array_modification_method!(i_want_pets, 2)
+puts my_hash_modification_method!(my_family_pets_ages, 3)
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
+# First I used a while loop, and then I decided it would be so much better if I used .each as
+# a loop as a way to refactor.
 #
 
 
