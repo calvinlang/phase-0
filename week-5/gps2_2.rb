@@ -71,3 +71,23 @@ update_item(grocery_list, "Water", 2)
 remove_item(grocery_list, "Bananas")
 
 print_list(grocery_list)
+
+# What did you learn about pseudocode from working on this challenge?
+#   Pseudocode is great for getting on the same page as your peer. It was a tough challenge for us and while the pseudocode
+#   ended up being thrown out the window becuase we didn't fully understand passing information to another, our guide got us
+#   through safely!
+# What are the tradeoffs of using Arrays and Hashes for this challenge?
+#   Arrays and hashes can be used to iterate through and store information in a more parseable and accessible form than as
+#   strings in variables.
+# What does a method return?
+#   A method can return anything. But it can return anything that takes in an argument and can modify it by its block to anything
+#   like an array or a hash.
+# What kind of things can you pass into methods as arguments?
+#   Almost any object can be passed into methods as arguments. In our example we could take strings and a number to return
+#   an array or a change in an array.
+# How can you pass information between methods?
+#   There are several ways. You can even put methods in as arguments to arrays. But we used a method to alter variables and arrays
+#   and had them called as parameters in other methods. 
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+#   That we can have several methods that all have different functions to create a full product. This idea was called "Flow control"
+#   in our readings and produced a methodology of having several methods to create an full set of tasks.
