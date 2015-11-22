@@ -39,18 +39,20 @@ def my_array_modification_method!(source, thing_to_modify)
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
-  source.each do | dog , age |
-    source[dog] = age + thing_to_modify
-  end
+  source.each { | dog , age | source[dog] = age + thing_to_modify }
 end
 
 puts my_array_modification_method!(i_want_pets, 2)
 puts my_hash_modification_method!(my_family_pets_ages, 3)
 
 # Identify and describe the Ruby method(s) you implemented.
+# 
 # First I used a while loop, and then I decided it would be so much better if I used .each as
-# a loop as a way to refactor.
-#
+# a loop as a way to refactor. However this became problematic because I couldn't for the life of me change the
+# original array as a destructive. It turned out .each is specifically for not being destructive. I still used it
+# on the hash and it worked beautifully. But on the array in the first part I used .map which is like .each and 
+# uses a loop to iterate through an array and make changes to the array.
+
 
 
 # Person 3
