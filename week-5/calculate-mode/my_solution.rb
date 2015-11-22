@@ -1,8 +1,8 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [by myself, with: Joe Plonkster]
+# I worked on this challenge with: Joe Plonkster
 
-# I spent [2] hours on this challenge.
+# I spent [2.5] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
