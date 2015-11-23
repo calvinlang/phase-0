@@ -1,14 +1,16 @@
 # Die Class 1: Numeric
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge myself
 
-# I spent [] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 # 0. Pseudocode
 
 # Input: The number of sides wanted on a dice (or the range of random digits)
 # Output: The output will be a random integer based on the number of sides of the die
-# Steps: 
+# Steps: Call the initialize that include the @sides instance and the raise argument error if < 1
+#  return @ sides
+# return rand(@sides)
 
 
 # 1. Initial Solution
