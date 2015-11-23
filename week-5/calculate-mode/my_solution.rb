@@ -70,9 +70,7 @@
 # 3. Refactored Solution
 
 def mode(array)
-  mode_hash = Hash.new
-
-  array.each { |x| mode_hash[x] = 0 }
+  mode_hash = Hash.new(0)
   array.each { |x| mode_hash[x] += 1 }
   mode_hash = mode_hash.sort_by{ |k, v| v }.to_h
   mode_hash = mode_hash.to_a.reverse.to_h
@@ -88,7 +86,8 @@ def mode(array)
   return key.sort
 end
 
-
+array = [ 1,1,1,2,2,3,4]
+p mode(array)
 
 # 4. Reflection
 # Which data structure did you and your pair decide to implement and why?
