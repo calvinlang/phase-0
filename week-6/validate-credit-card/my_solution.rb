@@ -9,8 +9,8 @@
 
 # array [4,5,6,3,9,6,0,1,2,2]
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge [by myself, with: Michael Du].
+# I spent [#1.2] hours on this challenge.
 
 # Pseudocode
 
