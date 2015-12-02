@@ -16,9 +16,19 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+var adam = {
+  name: "Adam"
+}
 
-
-
+terah.spouse = adam
+terah.weight = 125
+delete terah.eyeColor
+adam.spouse = terah
+terah.children = {}
+terah.children.carson = {name: "Carson"}
+terah.children.carter = {name: "Carter"}
+terah.children.colton = {name: "Colton"}
+adam.children = terah.children
 
 
 
@@ -29,11 +39,17 @@ var terah = {
 // __________________________________________
 // Reflection: Use the reflection guidelines
 //
-//
-//
-//
-//
-//
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+//   I had a little trouble with passing the children in a new object part because I didn't realize
+//   I could declare new objects within an object with that syntax. But I followed the pattern form
+//   the previous exercises and it worked.
+// How difficult was it to add and delete properties outside of the object itself?
+//   Not difficult at all. I simply had to call the delete command and name the object and the property.
+// What did you learn about manipulating objects in this challenge?
+//   I learned about the syntax involved with manipulating objects. They are very similar to manipulating
+//   hashes with a few syntax differences. Especially with declaring a new property and value I could
+//   simply use a : which was very nice. Also using dot notation to edit the values was nice but I still
+//   prefer the Ruby way of having [] brackets.
 
 
 // __________________________________________
