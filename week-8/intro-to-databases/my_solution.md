@@ -1,7 +1,7 @@
 # Introduction to Databases
 
-#### I worked on this challenge [by myself, with: ]
-#### This challenge took me [#] hours.
+#### I worked on this challenge [by myself]
+#### This challenge took me [2] hours.
 
 ## SQL Queries
 
@@ -34,13 +34,13 @@ Paste the correct SQL queries for each of the following:
 # ![Schema](schema.png)  
 
 ## Reflection
-What are databases for?
-	Databases are used for the storage and retrieval of data. They have specific organization systems and involve use of many tables to retrieve relevant information.
-What is a one-to-many relationship?
-	A one-to-many relationship is when one row on a table can actually be related to many rows on another table. This allows information to be saved in one row but also be used to reference information in many other tables and rows. 
-What is a primary key? What is a foreign key? How can you determine which is which?
-	A primary key is a value on a row that uniquely idetifies that row. A foreign key is a value in a row that points to a primary key in another table. We can tell which is which by having an overal full understanding of the database structure as well as noting the labels of the fields.
+- What are databases for?
+	- Databases are used for the storage and retrieval of data. They have specific organization systems and involve use of many tables to retrieve relevant information.
+- What is a one-to-many relationship?
+	- A one-to-many relationship is when one row on a table can actually be related to many rows on another table. This allows information to be saved in one row but also be used to reference information in many other tables and rows. 
+- What is a primary key? What is a foreign key? How can you determine which is which?
+	- A primary key is a value on a row that uniquely idetifies that row. A foreign key is a value in a row that points to a primary key in another table. We can tell which is which by having an overal full understanding of the database structure as well as noting the labels of the fields.
 	Also in many schemas people will not FK or PK for if something is a foreign or primary key.
-How can you select information out of a SQL database? What are some general guidelines for that?
-	You can select information like with an object or a hash and it and pull information from a single column and row to get a specific value. The general guidelines are you select what columns you want with SELECT. You can select for a specific row/input with putting WHERE
+- How can you select information out of a SQL database? What are some general guidelines for that?
+	- You can select information like with an object or a hash and it and pull information from a single column and row to get a specific value. The general guidelines are you select what columns you want with SELECT. You can select for a specific row/input with putting WHERE
 
