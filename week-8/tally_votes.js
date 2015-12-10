@@ -1,3 +1,4 @@
+
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with:
@@ -65,29 +66,81 @@ var officers = {
 }
 
 // Pseudocode
-
+// FOR loop through votes
+//   FOR loop through each officer role
+//     IF that person exists in the voteCount object
+//       Add 1 to that person's property
+//     ELSE add that person as a new property with a value of 1
+// Sort the votecounts object by the value
+// Assign the first property in each of the officer properties to the officers object under the correct value
 
 // __________________________________________
 // Initial Solution
 
 
+// function voteCall(){
+//   for (var vote in votes){
+//     for (var people in votes[vote]){
+//       if ( voteCount[people].hasOwnProperty(votes[vote][people]) ) {
+//         var newPerson = votes[vote][people];
+//         voteCount[people][newPerson] += 1;
+//       } else {
+//         var newPerson = votes[vote][people];
+//         voteCount[people][newPerson] = 1;
+//       }      
+//     }      
+//   }
+//   for (var position in voteCount) {
+//     var votesCounted = Object.keys(voteCount[position]).sort(function(a,b){return voteCount[position][b]-voteCount[position][a]});
+//     officers[position] = votesCounted[0]; 
+//   }
+// }
 
-
-
-
+// voteCall();
 
 // __________________________________________
 // Refactored Solution
 
+function voteCall(){
+  for (var vote in votes){
+    for (var people in votes[vote]){
+      if ( voteCount[people].hasOwnProperty(votes[vote][people]) ) {
+        voteCount[people][votes[vote][people]] += 1;
+      } else {
+        voteCount[people][votes[vote][people]] = 1;
+      }      
+    }      
+  }
+  for (var position in voteCount) {
+    var votesCounted = Object.keys(voteCount[position]).sort(function(a,b){return voteCount[position][b]-voteCount[position][a]});
+    officers[position] = votesCounted[0]; 
+  }
+}
 
-
+voteCall();
 
 
 
 // __________________________________________
 // Reflection
 
-
+// What did you learn about iterating over nested objects in JavaScript?
+//   - I learned that organization is incredibly important and involves a thorough understanding of
+//   the syntax because things get incredibly elaborate. When iterating there is a difference between
+//   using [i] and i and it's good to label them to stay organized. The i without the brackets will 
+//   call the property instead of the value and you have to really step back and write down which is
+//   which sometimes for each loop.
+// Were you able to find useful methods to help you with this?
+//   - Yes the hasOwnProperty() which is similar to the .contains in Ruby. We used this to determine if
+//   the votes were already logged in the voteCount object and if it was then it would add 1 instead or
+//   create one if it wasn't there. 
+//   We also decided to sort our totals for each person and simply push it to the officers object. So were
+//   created a loop for the officers object. For the votes we had to sort it and convert it to an array,
+//   which is much harder in JavaScript. We had to look online for a function to manage this. 
+// What concepts were solidified in the process of working through this challenge?
+//   - Iterating through hashes in Javascript was definitely solidified better and I will keep this
+//   assignment as a resource for reviewing this syntax. Also iterating through a hash was something that
+//   I hadn't done before in JS so this was a good exercise for me.
 
 
 
@@ -152,3 +205,7 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
+
+
+
