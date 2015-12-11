@@ -77,10 +77,97 @@
 # p new_num.to_words
 
 # REFACTORED SOLUTION
+# class NumberToWords
+# 	def initialize(num)
+# 		@num = num
+# 		@num_split = to_s.split("").map(&:to_i)
+# 		@number_names = {
+# 		1 => "one",
+# 		2 => "two",
+# 		3 => "three",
+# 		4 => "four",
+# 		5 => "five",
+# 		6 => "six",
+# 		7 => "seven",
+# 		8 => "eight",
+# 		9 => "nine",
+# 		10 => "ten",
+# 		11 => "eleven",
+# 		12 => "twelve",
+# 		13 => "thirteen",
+# 		20 => "twenty",
+# 		30 => "thirty",
+# 		40 => "forty",
+# 		50 => "fifty",
+# 		60 => "sixty",
+# 		70 => "seventy",
+# 		80 => "eighty",
+# 		90 => "ninety",
+# 		100 => "hundred",
+# 		1000 => "thousand"
+# 	}
+# 	end
+
+# # first3 takes any integer and reduces it to the last 3 digits eg 54321 -> 321
+# 	def first3(value) 
+# 		value.to_s.split("").drop(value.to_s.length-3).join("").to_i
+# 	end
+
+# # less_than_1000 takes any 3 digit number and converts it to words
+# 	def less_than_1000(hundreds)
+# 		hundreds_split = hundreds.to_s.split("").map(&:to_i)
+# 		case
+# 		when hundreds == 0
+# 			nil
+# 		when hundreds <= 13
+# 			@number_names[hundreds]
+# 		when hundreds <= 19
+# 			@number_names[hundreds_split[1]] + "teen"
+# 		when hundreds <= 99
+# 			if hundreds % 10 == 0
+# 				@number_names[hundreds_split[0] * 10]
+# 			else
+# 				@number_names[hundreds_split[0] * 10] + " " + @number_names[hundreds_split[1]]
+# 			end
+# 		when hundreds <= 999
+# 			if hundreds % 100 == 0
+# 				less_than_1000(hundreds_split[0]) + " hundred"
+# 			else
+# 				less_than_1000(hundreds_split[0]) + " hundred " + less_than_1000(hundreds_split.drop(1).join("").to_i)
+# 			end
+# 		end
+# 	end
+
+# 	def to_words
+# 		case
+# 		when @num < 1000
+# 			less_than_1000(@num)
+# 		when @num < 1000000
+# 			if @num % 1000 == 0
+# 				less_than_1000((@num/1000).floor) + " thousand"
+# 			else
+# 				less_than_1000((@num/1000).floor) + " thousand " + less_than_1000(first3(@num))
+# 			end
+# 		when @num < 1000000000
+# 			if @num % 1000000 == 0
+# 				less_than_1000(@num/1000000.floor) + " million"
+# 			elsif @num % 1000 == 0
+# 				less_than_1000(@num/1000000.floor) + " million " + less_than_1000(((@num - (@num/1000000).floor * 1000000)/1000).floor) + " thousand "
+# 			else
+# 				less_than_1000(@num/1000000.floor) + " million " + less_than_1000(((@num - (@num/1000000).floor * 1000000)/1000).floor) + " thousand " + less_than_1000(first3(@num))
+# 			end
+# 		when @num == 1000000000
+# 			return "One Billion"
+# 		end
+# 	end
+
+# end
+
+
+
 class NumberToWords
 	def initialize(num)
 		@num = num
-		@num_split = to_s.split("").map(&:to_i)
 		@number_names = {
 		1 => "one",
 		2 => "two",
@@ -108,9 +195,12 @@ class NumberToWords
 	}
 	end
 
-# first3 takes any integer and reduces it to the last 3 digits eg 54321 -> 321
-	def first3(value) 
-		value.to_s.split("").drop(value.to_s.length-3).join("").to_i
+# num_split2 converts a number into an array split into 3's
+	def num_split2
+		number_to_split = @num
+		number_to_split = number_to_split.to_s.reverse.split("").map(&:to_i).each_slice(3).to_a
+		number_to_split.map! { |x| x.reverse }
+		number_to_split.reverse
 	end
 
 # less_than_1000 takes any 3 digit number and converts it to words
@@ -138,36 +228,28 @@ class NumberToWords
 		end
 	end
 
+
+
 	def to_words
-		case
-		when @num < 1000
-			less_than_1000(@num)
-		when @num < 1000000
-			if @num % 1000 == 0
-				less_than_1000((@num/1000).floor) + " thousand"
+		commas = ["" , " thousand ", " million " , " billion " , " trillion "]
+		word_statement = ""
+		num_split2.each_with_index.map do  | x , index| 
+			# If statement for 3 zeros because cannot become an integer
+			if x == [0,0,0] 
 			else
-				less_than_1000((@num/1000).floor) + " thousand " + less_than_1000(first3(@num))
+				word_statement = word_statement + less_than_1000(x.join.to_i) + commas[num_split2.length - index - 1]
 			end
-		when @num < 1000000000
-			if @num % 1000000 == 0
-				less_than_1000(@num/1000000.floor) + " million"
-			elsif @num % 1000 == 0
-				less_than_1000(@num/1000000.floor) + " million " + less_than_1000(((@num - (@num/1000000).floor * 1000000)/1000).floor) + " thousand "
-			else
-				less_than_1000(@num/1000000.floor) + " million " + less_than_1000(((@num - (@num/1000000).floor * 1000000)/1000).floor) + " thousand " + less_than_1000(first3(@num))
-			end
-		when @num == 1000000000
-			return "One Billion"
 		end
+		word_statement
 	end
 
 end
 
+new_num = NumberToWords.new(1000567890)
+p new_num.to_words
+new_num = NumberToWords.new(1010)
+p new_num.to_words
 
-new_num = NumberToWords.new(10101001)
-p new_num.to_words
-new_num = NumberToWords.new(123456789)
-p new_num.to_words
 
 # Reflection
 # What concepts did you review or learn in this challenge?
@@ -186,6 +268,8 @@ p new_num.to_words
 # 	and subtracting as well as splitting into an array to make it work.
 # 	In terms of ruby concepts, there was a fair bit of recursion used and using methods as objects to complete my
 # 	goal.
+#   When refactoring I thought of a way to slice an array into 3's while keeping the the array[0] with less than
+#   3 digits if possible. Then I used that to loop through to call back to the hundreds name generator.
 # What is still confusing to you about Ruby?
 # 	One thing I'm wondering is about speed. I looked up some solutions online and all of them use iteration through
 # 	and loop hundreds of times and I'm wondering how efficient this is. How do I know which solution would be best
